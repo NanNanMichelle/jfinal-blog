@@ -1,0 +1,19 @@
+
+2022-10-31 20:21:35
+[ERROR]-[Thread: XNIO-1 I/O-1]-[io.undertow.server.Connectors.executeRootHandler()]: UT005071: Undertow request failed HttpServerExchange{ GET default.asp}
+java.lang.IllegalArgumentException: UT000068: Servlet path match failed
+	at io.undertow.servlet.handlers.ServletPathMatchesData.getServletHandlerByPath(ServletPathMatchesData.java:83)
+	at io.undertow.servlet.handlers.ServletPathMatches.getServletHandlerByPath(ServletPathMatches.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleRequest(ServletInitialHandler.java:147)
+	at io.undertow.server.handlers.HttpContinueReadHandler.handleRequest(HttpContinueReadHandler.java:69)
+	at io.undertow.server.handlers.PathHandler.handleRequest(PathHandler.java:104)
+	at io.undertow.server.handlers.encoding.EncodingHandler.handleRequest(EncodingHandler.java:66)
+	at io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.protocol.http.HttpReadListener.handleEventWithNoRunningRequest(HttpReadListener.java:256)
+	at io.undertow.server.protocol.http.HttpReadListener.handleEvent(HttpReadListener.java:136)
+	at io.undertow.server.protocol.http.HttpReadListener.handleEvent(HttpReadListener.java:59)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:89)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:591)

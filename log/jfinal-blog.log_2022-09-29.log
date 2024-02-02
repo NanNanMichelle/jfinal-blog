@@ -1,0 +1,48 @@
+
+2022-09-29 03:09:09
+[ERROR]-[Thread: XNIO-1 I/O-2]-[io.undertow.server.Connectors.executeRootHandler()]: UT005071: Undertow request failed HttpServerExchange{ CONNECT httpbin.org:443}
+java.lang.IllegalArgumentException: UT000068: Servlet path match failed
+	at io.undertow.servlet.handlers.ServletPathMatchesData.getServletHandlerByPath(ServletPathMatchesData.java:83)
+	at io.undertow.servlet.handlers.ServletPathMatches.getServletHandlerByPath(ServletPathMatches.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleRequest(ServletInitialHandler.java:147)
+	at io.undertow.server.handlers.HttpContinueReadHandler.handleRequest(HttpContinueReadHandler.java:69)
+	at io.undertow.server.handlers.PathHandler.handleRequest(PathHandler.java:104)
+	at io.undertow.server.handlers.encoding.EncodingHandler.handleRequest(EncodingHandler.java:66)
+	at io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.protocol.http.HttpReadListener.handleEventWithNoRunningRequest(HttpReadListener.java:256)
+	at io.undertow.server.protocol.http.HttpReadListener.handleEvent(HttpReadListener.java:136)
+	at io.undertow.server.protocol.http.HttpOpenListener.handleEvent(HttpOpenListener.java:162)
+	at io.undertow.server.protocol.http.HttpOpenListener.handleEvent(HttpOpenListener.java:100)
+	at io.undertow.server.protocol.http.HttpOpenListener.handleEvent(HttpOpenListener.java:57)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:291)
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:286)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.nio.QueuedNioTcpServer2.acceptTask(QueuedNioTcpServer2.java:178)
+	at org.xnio.nio.WorkerThread.safeRun(WorkerThread.java:612)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:479)
+
+2022-09-29 03:09:09
+[ERROR]-[Thread: XNIO-1 I/O-1]-[io.undertow.server.Connectors.executeRootHandler()]: UT005071: Undertow request failed HttpServerExchange{ CONNECT httpbin.org:443}
+java.lang.IllegalArgumentException: UT000068: Servlet path match failed
+	at io.undertow.servlet.handlers.ServletPathMatchesData.getServletHandlerByPath(ServletPathMatchesData.java:83)
+	at io.undertow.servlet.handlers.ServletPathMatches.getServletHandlerByPath(ServletPathMatches.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleRequest(ServletInitialHandler.java:147)
+	at io.undertow.server.handlers.HttpContinueReadHandler.handleRequest(HttpContinueReadHandler.java:69)
+	at io.undertow.server.handlers.PathHandler.handleRequest(PathHandler.java:104)
+	at io.undertow.server.handlers.encoding.EncodingHandler.handleRequest(EncodingHandler.java:66)
+	at io.undertow.server.handlers.SetHeaderHandler.handleRequest(SetHeaderHandler.java:90)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.protocol.http.HttpReadListener.handleEventWithNoRunningRequest(HttpReadListener.java:256)
+	at io.undertow.server.protocol.http.HttpReadListener.handleEvent(HttpReadListener.java:136)
+	at io.undertow.server.protocol.http.HttpOpenListener.handleEvent(HttpOpenListener.java:162)
+	at io.undertow.server.protocol.http.HttpOpenListener.handleEvent(HttpOpenListener.java:100)
+	at io.undertow.server.protocol.http.HttpOpenListener.handleEvent(HttpOpenListener.java:57)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:291)
+	at org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:286)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.nio.QueuedNioTcpServer2.acceptTask(QueuedNioTcpServer2.java:178)
+	at org.xnio.nio.WorkerThread.safeRun(WorkerThread.java:612)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:479)
